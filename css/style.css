@@ -51,28 +51,25 @@ body {
 .list {
   list-style: none;
 }
-.header{
+.header {
   border-bottom: 1px solid var(--bg-secondary-color);
 }
-.header-container{
+.header-container {
   display: flex;
   align-items: center;
   margin: auto;
   padding: 0 15px 0 15px;
-  
 }
-.header-nav{
+.header-nav {
   display: flex;
   align-items: center;
 }
-.header-nav-menu{
+.header-nav-menu {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-padding: 24px 0px;
-gap: 40px;
-margin-right: 332px;
-
+  padding: 24px 0px;
+  gap: 40px;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -82,9 +79,7 @@ margin-right: 332px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color);
- margin-right: 76px;
-
-
+  margin-right: 76px;
 }
 .logo-part {
   color: var(--main-font-color);
@@ -94,6 +89,8 @@ margin-right: 332px;
   font-weight: 500;
   color: var(--main-font-color);
   letter-spacing: 0.02em;
+  display: flex;
+  padding: 24px 0;
 }
 .info-link {
   color: var(--secondary-font-color);
@@ -101,6 +98,10 @@ margin-right: 332px;
   font-weight: 400;
 }
 
+.adress {
+  display: flex;
+  align-items: flex-end;
+}
 .adress-list {
   font-style: normal;
   display: flex;
@@ -121,6 +122,11 @@ margin-right: 332px;
   color: var(--main-light-color);
   letter-spacing: 0.04em;
   font-family: "Roboto", sans-serif;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  margin: 0 auto;
 }
 
 .button:hover,
@@ -136,15 +142,18 @@ margin-right: 332px;
   line-height: 1.5;
   color: var(--logo-color);
   font-family: inherit;
+  padding: 12px 24px;
 }
 .btn-filter:active,
 .btn-filter:focus,
 .btn-filter:hover {
   color: var(--main-light-color);
   background: var(--accent-color);
+  border: 1px solid transparent;
 }
 .title {
   background-color: var(--main-font-color);
+  padding: 188px 0;
 }
 .visually-hidden {
   position: absolute;
@@ -166,8 +175,48 @@ margin-right: 332px;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-light-color);
+  max-width: 496px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
+.about {
+  padding: 120px 0;
+}
+.about-list {
+  display: flex;
+  gap: 24px;
+}
+.about-list-item {
+  width: calc((100% - 72px) / 4);
+}
+.about-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main-font-color);
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.about-text {
+  line-height: 1.5;
+  color: var(--secondary-font-color);
+  letter-spacing: 0.02em;
+}
+
+.services {
+  padding-bottom: 120px;
+}
+
+.services-list {
+  display: flex;
+  gap: 24px;
+}
+
+.services-list-img {
+  width: calc((100% - 48px) / 3);
+}
 .card-title {
   font-weight: 500;
   font-size: 20px;
@@ -183,13 +232,30 @@ margin-right: 332px;
 }
 .our-team {
   background-color: var(--light-font-color);
+  padding: 120px 0;
 }
-.card-team {
+.card-team-list {
+  display: flex;
+  gap: 24px;
+}
+.card-team-item {
   background-color: var(--main-light-color);
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-font-color);
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.worker {
+  padding: 32px 16px;
+}
+.worker-name {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.worker-job {
+  text-align: center;
 }
 .team-description {
   font-size: 16px;
@@ -206,21 +272,41 @@ margin-right: 332px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--main-font-color);
+  margin-bottom: 72px;
 }
-.about-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: var(--main-font-color);
-  letter-spacing: 0.02em;
+
+.filter {
+  padding: 96px 0 120px;
 }
-.about-text {
-  line-height: 1.5;
-  color: var(--secondary-font-color);
-  letter-spacing: 0.02em;
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.card-project{
+  width: calc((100% - 48px) / 3);
+}
+.card-project-description{
+  padding: 32px 16px;
+  border: 1px solid var(--bg-secondary-color);
+  border-top: none;
+  margin-bottom: 8px
 }
 .footer {
   background: var(--main-font-color);
+  padding: 100px 0;
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logo-part-footer {
   color: var(--light-font-color);
